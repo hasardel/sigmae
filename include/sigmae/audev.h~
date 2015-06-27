@@ -1,0 +1,39 @@
+/* SIGMAE
+ * audev.h
+ */
+
+#ifndef SGAUDEV_H
+#define SGAUDEV_H
+
+#include <sigmae/base/types.h>
+#include <sigmae/format.h>
+
+#define SG_AUDEV_MODE_R 1
+#define SG_AUDEV_MODE_W 2
+#define SG_AUDEV_MODE_RW 3
+
+#define SG_AUDEV_TYPE_OSS 0
+#define SG_AUDEV_TYPE_ALSA 1
+
+typedef SgInt (*SgAuDevReadFun)(void *handle, void* data, SgSize size);
+typedef SgInt (*SgAuDevWriteFun)(void *handle, void* data, SgSize size);
+typedef SgInt (*SgAuDevCloseFun)(void *handle);
+
+typedef struct _SgAuDev {
+  SgInt type;
+  SgInt mode;
+  SgAuDevReadFun read;
+  SgAuDevWriteFun write;
+  SgAuDevCloseFun close;
+  void *handle;
+} SgAuDev;
+
+/* open the audio device of type and mode defined by
+   SG_AUDEV_TYPE_* and SG_AUDEV_MODE_* */
+SgInt sg_audev_open(SgAuDev *audev, SgInt type, SgInt mode, SgInt format,
+                                    SgUInt samplerate, SgUInt channels);
+
+#endif
+
+/* end */
+

@@ -1,0 +1,24 @@
+/* SIGMAE
+ * mem.h
+ */
+
+#ifndef SGMEM_H
+#define SGMEM_H
+
+#include <string.h>
+
+#include <sigmae/base/types.h>
+
+typedef struct _SgMem {
+  void *mem;
+} SgMem;
+
+void *sg_alloc(SgSize size);
+void *sg_calloc(SgSize nmemb, SgSize size);
+void *sg_realloc(void *addr, SgSize size);
+void sg_free(void *addr);
+
+#endif
+
+/* end */
+

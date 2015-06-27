@@ -1,0 +1,40 @@
+elem.c: In function ‘sg_elem_find_srcelem’:
+elem.c:540: erreur: ‘elem’ undeclared (first use in this function)
+elem.c:540: erreur: (Each undeclared identifier is reported only once
+elem.c:540: erreur: for each function it appears in.)
+elem.c:543: erreur: expected ‘)’ before ‘return’
+elem.c:544: erreur: expected expression before ‘}’ token
+elem.c:547: attention : assignment from incompatible pointer type
+elem.c:549: erreur: expected ‘)’ before ‘return’
+elem.c:550: erreur: expected expression before ‘}’ token
+elem.c: Hors de toute fonction :
+elem.c:556: erreur: conflicting types for ‘sg_connect_elems’
+include/sigmae/elem.h:74: erreur: previous declaration of ‘sg_connect_elems’ was here
+elem.c: In function ‘sg_connect_elems’:
+elem.c:577: erreur: ‘SgOutNode’ has no member named ‘conv’
+elem.c:578: erreur: ‘SgOutNode’ has no member named ‘conv’
+elem.c:581: attention : implicit declaration of function ‘sg_get_plugin’
+elem.c:582: attention : assignment makes pointer from integer without a cast
+elem.c:584: erreur: incompatible type for argument 2 of ‘sg_make_elem’
+elem.c:585: erreur: expected ‘;’ before ‘)’ token
+elem.c:585: erreur: expected statement before ‘)’ token
+elem.c:587: erreur: ‘SgOutNode’ has no member named ‘conv’
+elem.c:594: erreur: ‘SgOutNode’ has no member named ‘conv’
+elem.c:595: erreur: ‘SgOutNode’ has no member named ‘conv’
+elem.c:599: attention : assignment makes pointer from integer without a cast
+elem.c:601: erreur: incompatible type for argument 2 of ‘sg_make_elem’
+elem.c:602: erreur: expected ‘;’ before ‘)’ token
+elem.c:602: erreur: expected statement before ‘)’ token
+elem.c:604: erreur: ‘SgOutNode’ has no member named ‘conv’
+elem.c: Hors de toute fonction :
+elem.c:614: erreur: conflicting types for ‘sg_unconnect_elems’
+include/sigmae/elem.h:75: erreur: previous declaration of ‘sg_unconnect_elems’ was here
+mod.c: In function ‘sg_newbuff’:
+mod.c:75: erreur: ‘SG_MODFLAG_USEDOUBLE’ undeclared (first use in this function)
+mod.c:75: erreur: (Each undeclared identifier is reported only once
+mod.c:75: erreur: for each function it appears in.)
+boundvar.c:62: attention : ‘bound_bvars’ defined but not used
+main.c: In function ‘main’:
+main.c:270: erreur: ‘SG_MODFLAG_USEDOUBLE’ undeclared (first use in this function)
+main.c:270: erreur: (Each undeclared identifier is reported only once
+main.c:270: erreur: for each function it appears in.)

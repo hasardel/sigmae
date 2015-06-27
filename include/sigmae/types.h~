@@ -1,0 +1,25 @@
+/* SIGMAE
+ * types.h
+ */
+
+#ifndef SGTYPES_H
+#define SGTYPES_H
+
+typedef struct _SgMod SgMod;
+typedef struct _SgElem SgElem;
+typedef struct _SgInpNode SgInpNode;
+typedef struct _SgOutNode SgOutNode;
+typedef struct _SgBoundVar SgBoundVar;
+typedef struct _SgPortDesc SgPortDesc;
+typedef struct _SgVarDesc SgVarDesc;
+typedef struct _SgElemDesc SgElemDesc;
+typedef struct _SgElemPluginDesc SgElemPluginDesc;
+typedef struct _SgModPluginDesc SgModPluginDesc;
+typedef struct _SgSgPluginDesc SgSgPluginDesc;
+typedef struct _SgLadspaPluginDesc SgLadspaPluginDesc;
+typedef union _SgPluginDescP SgPluginDescP;
+
+#endif
+
+/* end */
+

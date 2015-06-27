@@ -1,0 +1,42 @@
+/* SIGMAE
+ * boundvar.h
+ */
+
+#ifndef SGBOUNDVAR_H
+#define SGBOUNDVAR_H
+
+#include <sigmae/base.h>
+#include <sigmae/types.h>
+
+#define SG_BVARFLAG_ELEM_OUTPUT 1
+#define SG_BVARFLAG_ELEM_LOCKED 2
+
+typedef SgVal (*SgBVarFun)(SgVal *s);
+
+struct _SgBoundVar {
+  SgUShort pnb;
+  SgInt flags;
+  SgVal *val;
+  SgBoundVar *ivar;
+  SgVector *ovars;
+  SgBVarFun on_setvar;
+  SgBVarFun on_varset;
+  SgElem *elem;
+  SgElem *firstelem;
+};
+
+SgBoundVar *sg_make_bvar(SgVal *val, SgElem *elem, SgInt flags);
+void sg_init_bvar(SgBoundVar *bvar, SgVal *val, SgElem *elem, SgInt flags);
+void sg_free_bvar(SgBoundVar *bvar);
+void sg_bound_bvars(SgBoundVar *v0, SgBoundVar *v1);
+void sg_unbound_bvars(SgBoundVar *v0, SgBoundVar *v1);
+void sg_unbound_bvar(SgBoundVar *bvar);
+void sg_set_bvar(SgBoundVar *bvar, SgVal val);
+void sg_update_bvar(SgBoundVar *bvar);
+void sg_bvar_attach(SgBoundVar *bvar, SgElem *elem);
+void sg_bvar_detach(SgBoundVar *bvar);
+
+#endif
+
+/* end */
+

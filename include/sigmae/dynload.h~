@@ -1,0 +1,18 @@
+/* SIGMAE
+ * dynload.h
+ */
+
+#ifndef SGDYMLOAD_H
+#define SGDYNLOAD_H
+
+typedef void *SgDLib;
+typedef void *SgDLProc;
+
+SgDLib sg_dl_open(SgChar *path);
+SgDLProc sg_dl_loadsym(SgDlib dl, SgChar *sym);
+void sg_dl_close(SgDLib dl);
+
+#endif
+
+/* end */
+

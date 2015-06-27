@@ -1,0 +1,14 @@
+/* SIGMAE
+ * base.h
+ */
+
+#ifndef SGBASE_H
+#define SGBASE_H
+
+#include <sigmae/base/dsaa.h>
+#include <sigmae/base/types.h>
+
+#endif
+
+/* end */
+

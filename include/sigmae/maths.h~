@@ -1,0 +1,18 @@
+/* SIGMAE
+ * math.h
+ */
+
+#ifndef SGMATH_H
+#define SGMATH_H
+
+#include <math.h>
+
+#define TWO_PI 6.28318530717958647692
+
+inline double ffmod(double a, double b);
+inline float ffmodf(float a, float b);
+
+#endif
+
+/* end */
+

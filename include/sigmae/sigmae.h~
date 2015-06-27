@@ -1,0 +1,18 @@
+/* SIGMAE
+ * sgator.h
+ */
+
+#include <sigmae/base.h>
+#include <sigmae/error.h>
+#include <sigmae/mem.h>
+#include <sigmae/elem.h>
+#include <sigmae/mod.h>
+#include <sigmae/core.h>
+#include <sigmae/plugin.h>
+#include <sigmae/audev.h>
+#include <sigmae/misc.h>
+#include <sigmae/utils.h>
+#include <sigmae/format.h>
+
+/* end */
+

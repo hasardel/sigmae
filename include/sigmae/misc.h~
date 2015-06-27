@@ -1,0 +1,21 @@
+/* SIGMAE
+ * gen.h
+ */
+
+#ifndef SGMISC_H
+#define SGMISC_H
+
+#include <sigmae/base/types.h>
+
+/* sample, frequency, delta[0;1.0], phase */
+SgFloat sg_sinusoide(SgFrames s, SgFloat f, SgFloat p);
+SgFloat sg_saw(SgFrames s, SgFloat f, SgFloat d, SgFloat p);
+SgFloat sg_rect(SgFrames s, SgFloat f, SgFloat d, SgFloat p);
+SgFloat sg_harmos(SgFrames s, SgFloat f, SgFloat p, SgInt n);
+SgFloat sg_fm(SgFrames s, SgFloat f1, SgFloat f2, SgFloat i);
+SgFloat sg_noise();
+
+#endif
+
+/* end */
+

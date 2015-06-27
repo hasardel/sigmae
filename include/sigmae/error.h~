@@ -1,0 +1,22 @@
+/* SIGMAE
+ * error.h
+ */
+
+#ifndef SGERROR_H
+#define SGERROR_H
+
+#include <sigmae/base/types.h>
+
+#define SGERR_UNKNOWN 0
+#define SGERR_IO 1
+#define SGERR_ALLOC 2
+#define SGERR_INTERN 3
+#define SGERR_PLUGIN 4
+
+void sg_error(SgUInt sgerr, char *f, ...);
+void sg_warning(SgUInt sgerr, char *f, ...);
+
+#endif
+
+/* end */
+

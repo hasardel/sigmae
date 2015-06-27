@@ -1,0 +1,10 @@
+/* SIGMAE
+ * utils.h
+ */
+
+#include <sigmae/types.h>
+
+void sg_inspect_elem(SgElem *elem);
+
+/* end */
+
